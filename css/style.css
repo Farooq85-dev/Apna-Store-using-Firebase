@@ -1,0 +1,277 @@
+/* Importing the Responsive Css File */
+@import url(responsive.css);
+
+/* Variable Css */
+:root {
+    --btnBgColor: #DB4444;
+    --inputBgColor: white;
+    --TextColor: black;
+    --borderBottomStyle: 2px solid black;
+    --paddingInput: 10px;
+    --radius: 10px;
+    --font: "Poppins";
+    --blackColor: #000;
+    --whiteColor: #fff;
+    --IconSize: 20px;
+    --radius: 10px;
+    --cardsBgColor: #f8f9fa;
+    --redColor: #DB4444;
+}
+
+* {
+    font-family: var(--font);
+}
+
+#topBar {
+    background-color: var(--blackColor);
+}
+
+.topBarText>p {
+    color: var(--whiteColor);
+    font-weight: 300;
+    margin: 0px !important;
+}
+
+.navbar {
+    background-color: var(--whiteColor) !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+    color: var(--whiteColor) !important;
+    border: none !important;
+}
+
+.logo {
+    color: var(--blackColor);
+    font-family: var(--font);
+    font-weight: bolder;
+}
+
+.myUl>li>a {
+    color: var(--blackColor) !important;
+    font-weight: bold !important;
+}
+
+.myUl>li>a.active {
+    border-bottom: 1px solid var(--blackColor);
+}
+
+.myUl>li>a:focus {
+    border-bottom: 1px solid var(--blackColor);
+}
+
+.searchContainer>input {
+    font-family: var(--font);
+    border-radius: 10px;
+}
+
+.searchContainer>input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25) !important;
+}
+
+.input-group-text {
+    background-color: var(--whiteColor);
+}
+
+.navbar-nav .nav-link {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.fa-search {
+    right: 125px;
+    font-size: var(--IconSize);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--blackColor);
+}
+
+.iconsHeader {
+    display: flex;
+    gap: 10px;
+}
+
+.iconCartDiscount {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    color: var(--redColor);
+    font-weight: bold;
+}
+
+.fa-cart-shopping,
+.fa-user-shield {
+    font-size: var(--IconSize);
+    color: var(--blackColor);
+}
+
+/* Slider Csss */
+.indicators {
+    background-color: white !important;
+    width: 15px !important;
+    height: 15px !important;
+    border: none !important;
+    border-radius: 100% !important
+}
+
+.sliderUl {
+    list-style-type: none;
+    font-weight: bold;
+    padding: 0px;
+}
+
+/* Products Css */
+.bx1,
+.bx2,
+.bx3,
+.bx4,
+.bx5,
+.bx6,
+.bx7,
+.bx8,
+.bx9,
+.bx10,
+.bx11,
+.bx12,
+.bx13,
+.bx14,
+.bx15,
+.bx16 {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: var(--radius);
+    background-color: var(--cardsBgColor);
+}
+
+.bx1,
+.bx2,
+.bx3,
+.bx4,
+.bx5,
+.bx6,
+.bx7,
+.bx8,
+.bx9,
+.bx10,
+.bx11,
+.bx12,
+.bx13,
+.bx14,
+.bx14,
+.bx15,
+.bx16 {
+    margin-bottom: 20px;
+}
+
+
+
+#orginalPrice {
+    color: var(--redColor);
+    font-weight: bold;
+}
+
+
+.bx1img>img,
+.bx2img>img,
+.bx3img>img,
+.bx4img>img,
+.bx5img>img,
+.bx6img>img,
+.bx7img>img,
+.bx8img>img,
+.bx9img>img,
+.bx10img>img,
+.bx11img>img,
+.bx12img>img,
+.bx13img>img,
+.bx14img>img,
+.bx14img>img,
+.bx15img>img,
+.bx16img>img {
+    max-width: 100% !important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.allPrducts>button {
+    border: none;
+    padding: 5px 15px;
+    border-radius: var(--radius);
+    margin-bottom: 16px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer Css */
+.footerSection {
+    background-color: var(--blackColor);
+    display: flex;
+    justify-content: space-around;
+    color: var(--whiteColor);
+}
+
+.ul1>ul,
+.ul2>ul,
+.ul3>ul,
+.ul4>ul {
+    list-style-type: none;
+    padding-left: 3px !important;
+}
+
+
+.ul1>ul>li:hover,
+.ul2>ul>li:hover,
+.ul3>ul>li:hover,
+.ul4>ul>:hover {
+    cursor: pointer;
+}
+
+.socialMediaIcons {
+    font-size: var(--IconSize);
+    display: flex;
+    gap: 28px;
+}
+
+#email1,
+#sendEamil,
+#textArea {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#sendEamil {
+    background-color: var(--redColor);
+    color: var(--whiteColor);
+}
+
+/* Modals css */
+.modalBtn {
+    background-color: var(--redColor);
+    color: var(--whiteColor);
+    border: none;
+    border-radius: var(--radius);
+}
+
+.modalBtn:hover {
+    background-color: #000;
+}
+
+/* Toaster Css */
+#toast-container>div {
+    opacity: 1 !important;
+    box-shadow: none !important;
+}
